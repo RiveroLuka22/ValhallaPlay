@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">    
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <title>Valorar Un Producto - ValhallaPlay</title>
 </head>
 <body>
@@ -66,6 +66,42 @@
             </div>
         </nav>
     </header>
+    <main>
+        <section id="main-valorar">
+            <div class="valorar">
+                <div class="valorar-carta">
+                    <img id="valorar-img" src="../img/juego-1.jfif" alt="">
+                    <div class="valorar-seleccion">
+                        <form action="">
+                            <label for="seleccion">¿Que juego desea valorar?</label>
+                            <select id="seleccion" name="seleccion" onchange="actualizarInformacion()">
+                                <option value="juego1">Operación Libertad</option>
+                                <option value="juego2">Velocidad Extrema</option>
+                                <option value="juego3">Zona de Combate</option>
+                                <option value="juego4">Mar de leyendas</option>
+                                <option value="juego5">Fuerza justiciera</option>
+                                <option value="juego6">Punto Cero: Disparo cibernetico</option>
+                                <option value="juego7">Pesadilla eterna</option>
+                            </select>
+                            <label for="valoracion">¿Que valoracion desea darle?</label>
+                            <select name="valoracion" id="valoracion">
+                                <option value="val-1">⭐</option>
+                                <option value="val-2">⭐⭐</option>
+                                <option value="val-3">⭐⭐⭐</option>
+                                <option value="val-4">⭐⭐⭐⭐</option>
+                                <option value="val-5">⭐⭐⭐⭐⭐</option>
+                            </select>
+                            <input type="submit" id="submit" class="cbutton">
+                        </form>
+                    </div>
+                    <div class="juego-valorar-info">
+                        <h2 id="valorar-title" class="juego-valorar-title">Operacion Libertad</h2>
+                        <p id="valorar-info">Un juego de acción y estrategia en el que debes liderar una rebelión contra un régimen mitico y malvado</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer>
         <div>
             <h2>ValhallaPlay</h2>
@@ -79,5 +115,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="../javascript/index.js"></script>
 </body>
 </html>

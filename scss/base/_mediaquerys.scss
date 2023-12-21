@@ -1,0 +1,160 @@
+@media screen and (max-width:1400px) {
+    #main-categorias{
+        section{
+            .juego-categoria{
+                .info-juego-cat{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #main-categorias{
+        section{
+            .juego-categoria{
+                padding-right: 100px;
+                width: 100%;
+                .info-juego-cat{
+                    width: 50%;
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:990px) {
+    .hero{
+        h1{
+            font-size: 70px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    
+    .logo-title{
+        display: inline;
+    }
+
+    #main-categorias{
+        section{
+            .juego-categoria{
+                padding-right: 25px;
+            }
+        }
+    }
+    
+    .card-container{
+        div{
+            flex-direction: column;
+            align-items: center; 
+        }
+    }
+
+    footer{
+        img{
+            width: 45px;
+        }
+    }
+}
+
+@media screen and (max-width:670px) {
+    .logo-title{
+        text-align: center;
+    }
+
+    header{
+        a{
+            img{
+                display: none;
+            }
+        }
+        ul{
+            li{
+                padding: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .hero{
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+
+    #main-valorar{
+        .valorar{
+            .valorar-carta{
+                grid-template-areas: 
+                "form form"
+                "info info";
+                img{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    #main-categorias{
+        section{
+            .juego-categoria{
+                flex-direction: column;
+                text-align: center;
+                .info-juego-cat{
+                    width: 100%;
+                }
+                .options-juegos-cat{
+                    width: 100%;
+                    padding-left: 25px;
+                    p{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    
+    footer{
+        img{
+            width: 35px;
+            margin: 10px;
+        }
+        h2{
+            font-size: 25px;
+        }
+    }
+}
+
+@media screen and (max-width:575px) {
+    
+    .hero{
+        p{
+            display: none;
+        }
+    }
+    
+    #main-categorias{
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "section";
+        aside{
+            display: none;
+        }
+    }
+}

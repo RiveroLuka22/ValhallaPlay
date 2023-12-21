@@ -1,0 +1,31 @@
+footer{
+    border-top: solid 5px $color-principal;
+    border-top-style: double;
+    background-color: #0a001e;
+    display: flex;
+    color: #333333;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../img/logo-black.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    h2{
+        font-size: 40px;
+    }
+    div{
+        width: 50%;
+    }
+    .redes{
+        width: 50%;
+        display: flex;
+        padding: 20px;
+        justify-content: space-evenly;
+    }
+    img{
+        width: 60px;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,33 @@
+/*! HEADER */
+.bg-color-nav{
+    background-image: linear-gradient(to top, #100010, #100030);
+}
+
+.logo-nav{
+    width: 128px;
+}
+
+.logo-title{
+    display: none;
+}
+
+.navbar-brand{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggler{
+    color: white;
+}
+
+.navbar-brand:is(:hover, :focus), .nav-item, .nav-link , .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+    color: white;
+}
+
+.nav-link{
+    font-size: 1.25rem;
+    &:hover{
+        color: $nav-hover;
+    }
+}

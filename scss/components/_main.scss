@@ -1,0 +1,324 @@
+
+/*! INDEX */
+.hero{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-image:url("../img/fondo.png");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    h1{
+        font-size: 90px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    p{
+        font-size: 25px;
+        padding: 50px;
+    }
+}
+
+.ver-mas{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px 40px;
+    color: white;
+    background-color: $color-principal;
+    border: solid 2px $color-principal;
+    border-radius: 5px;
+    border-bottom-left-radius: 30%;
+    border-top-right-radius: 30%;
+    transition: .2s ease;
+    &:hover{
+        background-color: #fff;
+        color: $color-principal;
+    }
+}
+
+.cards-container{
+    h2{
+        text-align: center;
+        font-size: 60px;
+        padding: 10px;
+        background-color: $color-principal;
+        color: #fff;
+    }
+    #game-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .carta{
+            width: 350px;
+            color: #fff;
+            padding: 10px;
+            margin: 5px;
+            border: solid 1px #101125;
+            border-radius: 5px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+.valued{
+    h2{
+        text-align: center;
+        font-size: 60px;
+        padding: 10px;
+        background-color: $color-principal;
+        color: #fff;
+    }
+    #game-valued{
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+        .game{
+            width: 500px;
+            border: solid 2px $color-principal;
+            margin: 10px;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            h3{
+                text-align: center;
+            }
+            p{
+                padding: 0 20px;
+                margin:0 10px;
+            }
+            div{
+                display: flex;
+                justify-content: center;
+                padding: 10px;
+                img{
+                    width: 0;
+                    flex-grow: 1;
+                    object-fit: cover;margin: 5px;
+                    opacity: .8;
+                    transition: .2s ease-out;
+                    &:hover{
+                        width: 25%;
+                        opacity: 1;
+                        margin: 0;
+                        filter: contrast(120%);
+                    }
+                }
+            }
+        }   
+    }
+}
+
+/*! RANKING */
+
+    #main-ranking{
+        color: white;
+        display: flex;
+        justify-content: center;
+        .rank-tabla{
+            width: 80%;
+            .rank-juego{
+                height: 128px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .rank-juego-info{
+                    display: flex;
+                    align-items: center;
+                    img{
+                        max-width: 128px;
+                        border-radius: 15px;
+                        padding: 10px;
+                    }
+                }
+                .rank-juego-pos{
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+
+/*! VALORAR */
+
+#main-valorar{
+    color: white;
+    .valorar{
+        height: 700px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .valorar-carta{
+            max-width: 70%;
+            border: solid 2px $color-principal-oscuro;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px 0 $color-principal-oscuro;
+            padding: 20px;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: .5fr 1.5fr;
+            grid-template-areas: 
+            "img form"
+            "info info"
+            ;
+            img{
+                width: 256px;
+                grid-area: img;
+            }
+            .valorar-seleccion{
+                grid-area: form;
+                form{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    label{
+                        text-align: center;
+                        font-size: 24px;
+                    }
+                    #seleccion{
+                        width: 80%;
+                        height: 50px;
+                        text-align: center;
+                    }
+                    #valoracion{
+                        text-align: center;
+                    }
+                }
+            }
+            .juego-valorar-info{
+                grid-area: info;
+            }
+        }
+    }
+}
+
+/*! CATEGORIAS */
+
+#main-categorias{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: .5fr 1.5fr;
+    grid-template-areas: 
+    "aside section";
+    section{
+        grid-area: section;
+        color: #fff;
+        border-left: solid 1px #100010;
+        .juego-categoria{
+            display: flex;
+            padding: 5px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 200px;
+            .info-juego-cat{
+                width: 50%;
+                display: flex;
+                align-items: center;
+            }
+            .options-juegos-cat{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-end;
+                text-align: center; 
+            }
+            img{
+                width: 128px;
+                padding: 10px;
+            }
+        }
+    }
+    aside{
+        background-color: $color-principal;
+        grid-area: aside;
+        display: flex;
+        justify-content: center;
+        padding-top: 100px;
+        ul{
+            li{ 
+                list-style: none;
+                margin: 15px;
+                a{
+                    color: #fff;
+                    font-size: 30px;
+                    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    transition: .2s ease;
+                    &:hover{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*! LOGIN */   
+.main-login{
+    background-color: $color-principal;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .login{
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            color: white;
+            padding: 10px;
+            border: solid 1px $color-principal;
+            background-image: url("../img/logo-black.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            form{
+                border: none;
+                label{
+                    display: block;
+                    margin: 5px;
+                }
+                input{
+                    padding: 10px;
+                    border: none;
+                    border-radius: 50px;
+                    color: black;
+                    &:focus-visible{
+                        border: none;
+                        outline: none;
+                    }
+                }
+            }
+            .register-info{
+                p{
+                    padding: 20px;
+                    font-size: 20px;
+                }
+                .register{
+                    text-decoration: none;
+                    display: inline-block;
+                    height: 40px;
+                    font-size: 15px;
+                    color: white;
+                    background-color: $color-principal;
+                    border-radius: 10px;
+                    padding: 8px;
+                    border: solid 1px white;
+                    outline: solid 2px $color-principal;
+                }
+            }
+        }
+    }
+}

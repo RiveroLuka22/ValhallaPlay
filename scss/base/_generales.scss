@@ -1,0 +1,60 @@
+/*! FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,600&display=swap');
+
+/*! RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*! GENERALES */
+.cbutton{
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 5px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 10px; 
+    font-size: 15px;
+    width: 100px;
+    text-decoration: none;
+    background-color: $color-principal;
+    color: white;
+    transition: .2s ease;
+    &:hover{
+        background-color: white;
+        color: $color-principal;
+    }    
+}
+
+button{
+    background-color: $color-principal;
+    border: none;
+}
+
+.button{
+    display: block;
+    padding: 15px;
+    border: solid 1px white;
+    border-radius: 5px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 10px; 
+    font-size: 15px;
+    text-decoration: none;
+    background-color: $color-principal;
+    color: white;
+    transition: .2s ease;
+    &:hover{
+        background-color: white;
+        font-size: 20px;
+        color: $color-principal;
+    }
+}
+
+section{
+    background-color: $color-principal;
+    margin: 0;
+}

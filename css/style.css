@@ -107,7 +107,7 @@ section{
     color: #fff;
 }
 
-.cards-container > div{
+.cards-container #game-cards{
     display: flex;
     justify-content: space-around;
 }
@@ -133,7 +133,7 @@ section{
     color: #fff;
 }
 
-.valued > div{
+.valued #game-valued{
     display: flex;
     width: 80%;
     margin: 0 auto;

@@ -1,3 +1,6 @@
 $color-principal: #100030;
 $color-principal-oscuro: #100010;
+$color-principal-claro: #100050;
 $nav-hover: #00ffff;
+
+$borde-cuadros: linear-gradient(to left, $color-principal-oscuro, $color-principal-claro);

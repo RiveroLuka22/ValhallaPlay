@@ -184,11 +184,20 @@ section {
   justify-content: center; }
   #main-ranking .rank-tabla {
     width: 80%; }
+    #main-ranking .rank-tabla .rank-h1 {
+      text-align: center;
+      font-size: 75px;
+      text-decoration: solid 1px underline; }
     #main-ranking .rank-tabla .rank-juego {
+      margin: 10px;
+      padding: 20px;
       height: 128px;
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: center;
+      border: solid 2px #100050;
+      border-radius: 25px;
+      box-shadow: 1px 1px 2px 2px #100010; }
       #main-ranking .rank-tabla .rank-juego .rank-juego-info {
         display: flex;
         align-items: center; }
